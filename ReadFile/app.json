@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "ReadFile",
-    "slug": "ReadFile",
+    "slug": "deeplink-file-not-readable-bug-demo",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -12,12 +12,13 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.per12345678.ReadFile"
     },
     "plugins": [
-        [
-          "./config-plugins/withOpenIn"
-        ]
+      [
+        "./config-plugins/withOpenIn"
+      ]
     ],
     "android": {
       "adaptiveIcon": {
@@ -30,7 +31,10 @@
       "intentFilters": [
         {
           "action": "VIEW",
-          "category": ["DEFAULT", "BROWSABLE"],
+          "category": [
+            "DEFAULT",
+            "BROWSABLE"
+          ],
           "data": {
             "scheme": "content",
             "mimeType": "application/pdf"
@@ -41,6 +45,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a03635d3-76fa-427b-ae95-c8349ef96818"
+      }
+    },
+    "owner": "xeniox"
   }
 }
