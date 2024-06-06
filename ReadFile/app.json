@@ -14,6 +14,11 @@
     "ios": {
       "supportsTablet": true
     },
+    "plugins": [
+        [
+          "./config-plugins/withOpenIn"
+        ]
+    ],
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
